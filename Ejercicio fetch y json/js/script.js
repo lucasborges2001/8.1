@@ -23,3 +23,6 @@ fetch(DATA_URL)
   .then((response) => {
     return response.json(); // formato json
   })
+  .then((data) => {
+    showData(data.students); // muestro los daotos de estudiantes
+  });
